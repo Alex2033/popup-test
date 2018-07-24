@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Popup Window</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Какой-то сайт</h1>
+      <!-- begin popup-->
+      <div class="popup">
+        <div class="popup__background"></div>
+        <div class="popup__wrapper">
+          <button class="popup__exit-button" type="button"><img src="img/exit.svg" alt="Exit icon"></button>
+          <div class="popup__left">
+            <div class="popup__img" style="background-image: url(img/image.jpg);"></div>
+          </div>
+          <div class="popup__right">
+            <h5 class="popup__title"><span class="popup__title-line">Подпишитесь </span><span class="popup__title-line">на рассылку!</span></h5>
+            <div class="popup__divider"></div>
+            <div class="popup__text">
+              <p>
+                И в числе первых вы будете узнавать о скидках, новинках, трендах и специальных предложениях.
+                
+              </p>
+            </div>
+            <!-- begin subscribe-form-->
+            <form class="subscribe-form popup__form">
+              <input class="subscriber-form__input" type="email" name="email" placeholder="E-mail" required>
+              <button class="button" type="submit">Подписаться</button>
+            </form>
+            <!-- end subscribe-form-->
+            <!-- begin footnote-->
+            <div class="footnote">Подписываясь на рассылку, вы соглашаетесь с<br><a class="footnote__link" href="#">политикой конфиденциальности</a></div>
+            <!-- end footnote-->
+          </div>
+        </div>
+      </div>
+      <!-- end popup-->
+    </div>
+  </body>
+</html>
